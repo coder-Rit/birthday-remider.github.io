@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/birthday-remider.github.io/static/css/main.9f6f40ed.chunk.css",
+    "main.js": "/birthday-remider.github.io/static/js/main.31a87517.chunk.js",
+    "main.js.map": "/birthday-remider.github.io/static/js/main.31a87517.chunk.js.map",
+    "runtime-main.js": "/birthday-remider.github.io/static/js/runtime-main.a2535fed.js",
+    "runtime-main.js.map": "/birthday-remider.github.io/static/js/runtime-main.a2535fed.js.map",
+    "static/js/2.25c8ba6d.chunk.js": "/birthday-remider.github.io/static/js/2.25c8ba6d.chunk.js",
+    "static/js/2.25c8ba6d.chunk.js.map": "/birthday-remider.github.io/static/js/2.25c8ba6d.chunk.js.map",
+    "static/js/3.dd157172.chunk.js": "/birthday-remider.github.io/static/js/3.dd157172.chunk.js",
+    "static/js/3.dd157172.chunk.js.map": "/birthday-remider.github.io/static/js/3.dd157172.chunk.js.map",
+    "index.html": "/birthday-remider.github.io/index.html",
+    "static/css/main.9f6f40ed.chunk.css.map": "/birthday-remider.github.io/static/css/main.9f6f40ed.chunk.css.map",
+    "static/js/2.25c8ba6d.chunk.js.LICENSE.txt": "/birthday-remider.github.io/static/js/2.25c8ba6d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a2535fed.js",
+    "static/js/2.25c8ba6d.chunk.js",
+    "static/css/main.9f6f40ed.chunk.css",
+    "static/js/main.31a87517.chunk.js"
+  ]
+}
