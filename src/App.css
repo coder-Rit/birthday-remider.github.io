@@ -1,38 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Poppins&display=swap');
+
+
+*{
+  padding:0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+   
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-image: radial-gradient(circle at -4.17% 4.55%, #fbff00 0, #dcff00 12.5%, #b3ff00 25%, #7eff08 37.5%, #00ff11 50%, #00ef21 62.5%, #00e336 75%, #00db4d 87.5%, #00d867 100%);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+ }
+ .AppDiv{
+   height: auto;
+   width:300px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.534);
+  backdrop-filter : blur(2px); 
+  padding: 0px 15px;
+   padding-bottom: 25px;
+   box-shadow: 0px 0px 24px -9px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 24px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 24px -9px rgba(0,0,0,0.75);
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ }
+ .AppDiv h4{
+   padding-top:25px ;
+   padding-bottom: 7px;
+   transform: translateX(-15px);
+   font-size: 19px;
+   width: 315.5px;
+   border-radius: 10px 10px 0 0;
+   padding-left: 15px;
+   background-image: radial-gradient(circle at -4.17% 4.55%, #12e300 0, #12e300 50%, #12e300 100%);
+ }
+ .AppDiv button{
+   width: 100%;
+   padding: 7px 0px;
+   outline: none;
+   border-radius: 5px;
+   border: none;
+   background-image: radial-gradient(circle at -4.17% 4.55%, #12e300 0, #12e300 50%, #12e300 100%);
+   text-align: center;
+   margin: 5px 0;
+   font-weight: 600;
+   font-size: 16px;
+   
+ }
+ .List  {
+     display: flex;
+     margin: 15px 0;
+     gap: 15px;
+ }
+ .List  div{
+     transform: translateY(3px);
+ }
+ 
+ .List img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #12e300 ;
+    
+ }
+ .List  h5{
+      font-size: 15px;
+      letter-spacing: 0.7px;
+ }
+ .List  h6{
+      font-size: 13px;
+ }
+ 
