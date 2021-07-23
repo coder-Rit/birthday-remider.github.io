@@ -1,20 +1,37 @@
 import React, { useState } from "react";
+import Tour from "./components/Tour";
 import Data from "./components/Data";
-import List from "./components/List";
-  import './App.css';
+import Loading from "./Loading";
+import './App.css';
 
-function App() {
+function App( ) {
 
-    const [state, setstate] = useState(Data)
+  const [state, setstate] = useState(Data)
+  const [loading, setLoading] = useState(true)
 
+  setTimeout(() => {
+    setLoading(false)
+  }, 1000);
+
+    const refresher =()=>{
+      setstate(Data)
+    }
+   
+ 
   return (
     <div className="App">
-        <div className="AppDiv">
-            <h4>{state.length} birthday today</h4>
-            <List state={state}/>
-            <button onClick={()=>{setstate([ ])}}>Clear All</button>
-            <button onClick={()=>{setstate(Data)}}>Filter</button>
-        </div>
+      {
+        state.length <= Data.length-1 ?<a className="refresher" onClick={()=>{refresher()}}>↻</a>:null
+
+      }
+      <img className="svg" 
+       src="/images/liquidCurvPath.svg"
+        alt="" />
+      {
+        loading ? <Loading /> : <Tour  stateValue={state} setStateValue={setstate}/>
+      }
+
+
     </div>
   );
 }

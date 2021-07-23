@@ -9,70 +9,179 @@
 }
 
 .App {
-  background-image: radial-gradient(circle at -4.17% 4.55%, #fbff00 0, #dcff00 12.5%, #b3ff00 25%, #7eff08 37.5%, #00ff11 50%, #00ef21 62.5%, #00e336 75%, #00db4d 87.5%, #00d867 100%);
-  display: flex;
+   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100vh;
- }
- .AppDiv{
-   height: auto;
-   width:300px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.534);
-  backdrop-filter : blur(2px); 
-  padding: 0px 15px;
-   padding-bottom: 25px;
-   box-shadow: 0px 0px 24px -9px rgba(0,0,0,0.75);
--webkit-box-shadow: 0px 0px 24px -9px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 24px -9px rgba(0,0,0,0.75);
+  height: auto;
+  padding-bottom: 100px ;
+  padding-top: 80px ;
+  background-image: radial-gradient(circle at 37.72% 119.64%, #a321c8 0, #7617ae 16.67%, #480a8f 33.33%, #0c006d 50%, #00004b 66.67%, #00002e 83.33%, #000018 100%);
+   color: white;
+}
+.App h1{
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+.App .svg{
+  position: absolute;
+  width: 500px;
+  z-index: 0;
+ top: 0;
+
+   }
+ .Loading{
+   height: 100vh;
+   width:100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.527);
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+   
 
  }
- .AppDiv h4{
-   padding-top:25px ;
-   padding-bottom: 7px;
-   transform: translateX(-15px);
-   font-size: 19px;
-   width: 315.5px;
-   border-radius: 10px 10px 0 0;
-   padding-left: 15px;
-   background-image: radial-gradient(circle at -4.17% 4.55%, #12e300 0, #12e300 50%, #12e300 100%);
+ .Loading img{
+  position: relative;
+  z-index: 2;
+  width: 75px;
+  height: 75px;
  }
- .AppDiv button{
-   width: 100%;
-   padding: 7px 0px;
-   outline: none;
-   border-radius: 5px;
-   border: none;
-   background-image: radial-gradient(circle at -4.17% 4.55%, #12e300 0, #12e300 50%, #12e300 100%);
-   text-align: center;
-   margin: 5px 0;
-   font-weight: 600;
-   font-size: 16px;
-   
- }
- .List  {
-     display: flex;
-     margin: 15px 0;
-     gap: 15px;
- }
- .List  div{
-     transform: translateY(3px);
- }
- 
- .List img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 3px solid #12e300 ;
+  
+  
+ .tourSite{
+   width: 250px;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   background-color: rgba(255, 255, 255, 0.26);
+   border-radius: 10px;
+   position: relative;
+  z-index: 1;
+  transform-style: preserve-3d;
+  perspective: 800px;
+   box-shadow: 0 0 29px -3px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0 0 29px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 0 0 29px -3px rgba(0,0,0,0.75);
     
  }
- .List  h5{
-      font-size: 15px;
-      letter-spacing: 0.7px;
+ 
+ .tourSite img{
+   width: 100%;
+   height: 150px;
+   border-radius: 10px 10px 0 0;
+   transition: all 1s;
+   position: relative;
+   z-index: 1;
+    
+  }
+  .tourSite h6{
+    position: relative;
+    bottom: 60px;
+    margin-left: 10px;
+    color:rgb(0, 255, 0); 
+    width: 180px;
+    font-size: 15px;
+    text-transform: capitalize;
+  }
+  
+ 
+  .tourSite img:hover{
+    transform-style: preserve-3d; 
+    border-radius: 10px;
+    padding-bottom: 110px;
+      transition: all 0.3s;
  }
- .List  h6{
-      font-size: 13px;
+ .tourSite h3{
+   text-transform: uppercase;
+   letter-spacing: 1px;
+  
+ }
+ .tourSite h5{
+   text-align: right;
+    margin: 10px;
+    color: rgb(0, 228, 0);
+    transition: all 0.3s;
+  }
+  .tourSite h5:hover { 
+    color: rgb(0, 255, 0);
+    text-shadow: 0 0 6px rgba(0, 255, 0, 0.582);
+    cursor: pointer;
+ }
+
+ .tourSite p{
+   width: 95%;
+   height: 100px;
+   overflow: hidden;
+   font-size: 0.8rem;
+   padding: 0px 10px; 
+   transition: all 1s;
+  }
+  .tourSite p:hover{
+    height: 300px;
+     transition: all 0.3s;
+ }
+ .tourSites  {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  gap: 30px;
+ }
+ .aDiv{ 
+   text-align: right;
+    height: 40px;
+    margin-top: 10px;
+ }
+ .tourSites a{
+font-size: 13px;
+color: rgb(0, 0, 0);
+background-color: rgb(0, 228, 0);
+text-decoration: none;
+margin: 7px 10px;
+padding: 7px 10px;
+border-radius: 30px;
+letter-spacing: 1.5px;
+cursor: pointer;
  }
  
+ .allTourisum{
+   width: 100vw;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+ }
+
+ .nameAndPrice{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+ }
+ .refresher{
+   color: rgb(255, 255, 255);
+   position: absolute;
+   top: 13%;
+   left: 7%;
+   font-size: 30px;
+   animation: refresher 1.8s infinite ;
+   cursor: pointer;
+   z-index: 2;
+  }
+   .refresher:hover{
+   color: rgb(38, 255, 0);
+
+ }
+ @keyframes refresher {
+   0%{
+     transform: rotateZ(0deg);
+   }
+   100%{
+     transform: rotateZ(360deg);
+   }
+ }
